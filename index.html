@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>La bunea mesa</h1>
+        <p>Comida casera, sabor real</p>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="ubicacion.html">¿Como llegar?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu del día</h2>
+
+            <article>
+                <h3>Entrada</h3>
+                <p>Ensalada mixta con aderezo de la casa.</p>
+            </article>
+            <article>
+                <h3>Milanesa con papas</h3>
+                <p>Claseca milanesa de carne sevida con papas fritas.</p>
+            </article>
+            <article>
+                <h3>Ravioles al disco</h3>
+                <p>Ravioles de ricota y verdura con salsa caresa y queso rallado.</p>
+            </article>
+            <article>
+                <h3>Ensalada cesar</h3>
+                <p>Lechuga, crutones, pollo grillado y aderezo cesar.</p>
+            </article>
+            <hr>
+            <aside id="nosotros">
+                <h2>Sobre nosotros</h2>
+                <p>Somos un restaurante familiar con más de 20 años. Nos apasiona la buena comida y la atención calida.</p>
+            </aside>
+        </section>
+        <hr>
+        <section id="reservas">
+            <h2>Reservas</h2>
+        </section>
+        <form action="">
+            <fieldset>
+                <legend>Datos de la reserva:</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Martin"> <br>
+
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" name="email" required placeholder="Ej: correo@ejemplo.com"> <br>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required> <br>
+
+                <label for="hora">Fecha</label>
+                <input type="time" id="hora" name="hora" required> <br>
+
+                <label for="personas">Nombre:</label>
+                <input type="number" id="personas" name="personas" required min="1" max="20" placeholder="Ej: 4" min="1" max="20"> <br>
+
+                <label>Comentario adicional</label><br>
+                <textarea name="comentario" id="comentario" rows="4" placeholder="Ej: preferencia de ubicación, sin gluten, etc..."></textarea><br>
+
+                <button type="submit">Reservar</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 La buena mesa - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
